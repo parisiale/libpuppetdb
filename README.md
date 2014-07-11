@@ -1,6 +1,6 @@
 # libpuppetdb
 
-## Intro
+## Introduction
 
 libpuppetdb is a simple library for the execution of Puppet DB queries.
 The library uses libcurl and relies on the Puppet DB REST API.
