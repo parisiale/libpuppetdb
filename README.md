@@ -2,14 +2,14 @@
 
 ## Introduction
 
-libpuppetdb is a simple library for the execution of Puppet DB queries.
-The library uses libcurl and relies on the Puppet DB REST API.
+libpuppetdb is a simple library for the execution of PuppetDB queries.
+The library uses libcurl and relies on the PuppetDB REST API.
 Both both SSL (HTTP) and non-SSL (HTTPS) queries are supported.
 
 ## Using libpuppetdb
 
 To use libpuppetdb in your code, you first create a PuppetdbConnector object.
-You do that by specifying the Puppet DB host and, for secure connections, the
+You do that by specifying the PuppetDB host and, for secure connections, the
 SSL certificates. Then you execute queries by instantiating Query objects and
 calling PuppetdbConnector::performQuery, that returns the query results
 (json format) as a string.
@@ -30,16 +30,17 @@ connection or query.
 
 ## Create a connection
 
-To create a connection, you have to specify the Puppet DB host name. The service
-port (default 8080) and the Puppet DB API version (default 'v3') are optional
+To create a connection, you have to specify the PuppetDB host name. The service
+port (default 8080) and the PuppetDB API version (default 'v3') are optional
 arguments.
+
 To create a secure connection, you also need to provide the file paths of the
-required certificates, as descrbied in the Puppet DB online documenation:
+required certificates, as described in the PuppetDB online documenation:
 the CA certificate, the client SSL certificate, and the client private key.
 
 ## Create a query
 
-To create a query, you simply specify the Puppet DB endpoint (mandatory) and
+To create a query, you simply specify the PuppetDB endpoint (mandatory) and
 the query string (optional).
 
 ## Build requirements
