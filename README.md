@@ -42,7 +42,7 @@ the CA certificate, the client SSL certificate, and the client private key.
 To create a query, you simply specify the Puppet DB endpoint (mandatory) and
 the query string (optional).
 
-## Build Requirements
+## Build requirements
 
 libpuppetdb is written in C++11, so you must call your compiler accordingly.
 
